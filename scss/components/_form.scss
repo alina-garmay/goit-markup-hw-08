@@ -1,13 +1,17 @@
 .form {
-
   &__label {
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      // line-height: 1.71;
+    }
   }
 
   &__control {
@@ -70,9 +74,15 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   }
 
   &__checkbox-input {
@@ -101,11 +111,18 @@
   }
 
   &__link-terms {
-    line-height: 1.71;
+    line-height: 1.17;
     letter-spacing: 0.03em;
+    font-size: 12px;
     text-decoration-line: underline;
     color: var(--accept-color);
+    
+     @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
   }
+  }
+
   &__button {
     display: flex;
     align-items: center;

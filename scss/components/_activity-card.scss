@@ -1,5 +1,8 @@
-.section-activity {
-
+.activity {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
   &__list {
     display: flex;
     flex-basis: calc((100% - 60px) / 3);
