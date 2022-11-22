@@ -142,14 +142,26 @@
           <h2 class="caption">Чим ми займаємося</h2>
           <ul class="activity__list">
             <li class="activity__card">
-              <img src="./images/box1.jpg" alt="Написання коду" width="370" />
+              <img
+                srcset="
+                  ./images/app-desktop.jpg 1x,
+                  ./images/app-desktop@2x.jpg 2x
+                "
+                src="./images/app-desktop.jpg"
+                alt="Написання коду"
+                width="370"
+              />
               <div class="activity__title">
                 <h3>Десктопні додатки</h3>
               </div>
             </li>
             <li class="activity__card">
               <img
-                src="./images/box2.jpg"
+                srcset="
+                  ./images/mobile-app-desktop.jpg    1x,
+                  ./images/mobile-app-desktop@2x.jpg 2x
+                "
+                src="./images/mobile-app-desktop.jpg"
                 alt="Створення додатків"
                 width="370"
               />
@@ -159,7 +171,11 @@
             </li>
             <li class="activity__card">
               <img
-                src="./images/box3.jpg"
+                srcset="
+                  ./images/design-desktop.jpg    1x,
+                  ./images/design-desktop@2x.jpg 2x
+                "
+                src="./images/design-desktop.jpg"
                 alt="Дизайн оформлення"
                 width="370"
               />
@@ -178,22 +194,22 @@
               <picture>
                 <source
                   srcset="
-                    ./images/designer-mobile.jpg 1x,
-                    ./images/designer-mobile.jpg 2x
+                    ./images/designer-mobile.jpg    1x,
+                    ./images/designer-mobile@2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
                 <source
                   srcset="
-                    ./images/designer-tablet.jpg 1x,
-                    ./images/designer-tablet.jpg 2x
+                    ./images/designer-tablet.jpg    1x,
+                    ./images/designer-tablet@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/designer-desktop.jpg 1x,
-                    ./images/designer-desktop.jpg 2x
+                    ./images/designer-desktop.jpg    1x,
+                    ./images/designer-desktop@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
@@ -241,22 +257,22 @@
               <picture>
                 <source
                   srcset="
-                    ./images/front-dev-mobile.jpg 1x,
-                    ./images/front-dev-mobile.jpg 2x
+                    ./images/front-dev-mobile.jpg    1x,
+                    ./images/front-dev-mobile@2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
                 <source
                   srcset="
-                    ./images/front-dev-tablet.jpg 1x,
-                    ./images/front-dev-tablet.jpg 2x
+                    ./images/front-dev-tablet.jpg    1x,
+                    ./images/front-dev-tablet@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/front-dev-desktop.jpg 1x,
-                    ./images/front-dev-desktop.jpg 2x
+                    ./images/front-dev-desktop.jpg    1x,
+                    ./images/front-dev-desktop@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
@@ -306,22 +322,22 @@
               <picture>
                 <source
                   srcset="
-                    ./images/marketing-mobile.jpg 1x,
-                    ./images/marketing-mobile.jpg 2x
+                    ./images/marketing-mobile.jpg    1x,
+                    ./images/marketing-mobile@2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
                 <source
                   srcset="
-                    ./images/marketing-tablet.jpg 1x,
-                    ./images/marketing-tablet.jpg 2x
+                    ./images/marketing-tablet.jpg    1x,
+                    ./images/marketing-tablet@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/marketing-desktop.jpg 1x,
-                    ./images/marketing-desktop.jpg 2x
+                    ./images/marketing-desktop.jpg    1x,
+                    ./images/marketing-desktop@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
@@ -371,27 +387,30 @@
               <picture>
                 <source
                   srcset="
-                    ./images/ui-designer-mobile.jpg 1x,
-                    ./images/ui-designer-mobile.jpg 2x
+                    ./images/ui-designer-mobile.jpg    1x,
+                    ./images/ui-designer-mobile@2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
                 <source
                   srcset="
-                    ./images/ui-designer-tablet.jpg 1x,
-                    ./images/ui-designer-tablet.jpg 2x
+                    ./images/ui-designer-tablet.jpg    1x,
+                    ./images/ui-designer-tablet@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/ui-designer-desktop.jpg 1x,
-                    ./images/ui-designer-desktop.jpg 2x
+                    ./images/ui-designer-desktop.jpg    1x,
+                    ./images/ui-designer-desktop@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
 
-                <img src="./images/ui-designer-desktop.jpg" alt="Фото дизайнера інтерфейсу" />
+                <img
+                  src="./images/ui-designer-desktop.jpg"
+                  alt="Фото дизайнера інтерфейсу"
+                />
               </picture>
 
               <div class="employee__thumb">
@@ -432,7 +451,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="caption">Постійні клієнти</h2>
           <ul class="clients-list">
@@ -487,75 +506,79 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__container">
-          <div class="footer__thumb">
-            <a class="logo" href="/"
-              >Web<span class="logo__part logo__part--white">Studio</span></a
-            >
-            <address class="footer__address">
-              <ul>
-                <li class="footer__item">
-                  <a
-                    class="footer__link footer__link--white"
-                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
+          <div class="footer__container-contacts">
+            <div class="footer__thumb">
+              <a class="logo" href="/"
+                >Web<span class="logo__part logo__part--white">Studio</span></a
+              >
+              <address class="footer__address">
+                <ul>
+                  <li class="footer__item">
+                    <a
+                      class="footer__link footer__link--white"
+                      href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="tel:+380961111111"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer__social">
+              <p class="footer__caption">Приєднуйтесь</p>
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="tel:+380961111111"
-                    >+38 096 111 11 11</a
-                  >
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-          <div class="footer__social">
-            <p class="footer__caption">Приєднуйтесь</p>
-            <ul class="footer__social-list">
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <svg width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
 
           <div>
             <p class="footer__caption">Підпишиться на розсилку</p>
             <form name="subscription-form" class="subscription-form">
               <label for="email"></label>
+
               <input
                 id="email"
                 class="subscription-form__input"
@@ -573,7 +596,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="mobile-menu js-menu-container">
       <button class="mobile-menu__close-button js-close-menu">

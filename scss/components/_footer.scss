@@ -3,48 +3,78 @@
   padding-bottom: 60px;
   background-color: var(--primary-bg-color);
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
 
-&__container {
-  display: flex;
-  align-items: baseline;
-}
+    @media screen and (min-width: 1200px) {
+      align-items: baseline;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 
-&__thumb {
-  padding-right: 24px;
-}
+  &__container-contacts {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 165px;
+    }
+    @media screen and (min-width: 768px) {
+      align-items: baseline;
+      gap: 70px;
+    }
+  }
 
-&__address {
-  margin-top: 20px;
-  font-style: normal;
-}
+  &__thumb {
+    margin-bottom: 60px;
+    text-align: center;
 
-&__item {
-  margin-bottom: 9px;
-}
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
 
-&__caption {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-  margin-bottom: 20px;
-}
-&__social {
-  margin-left: 70px;
-  margin-right: 93px;
-}
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
+  }
 
-&__social-list {
-  display: flex;
-  gap: 10px;
-}
+  &__address {
+    margin-top: 20px;
+    font-style: normal;
+  }
 
-&__social-item {
-  width: 44px;
-  height: 44px;
-}
+  &__item {
+    margin-bottom: 9px;
+  }
+
+  &__caption {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+  &__social {
+    text-align: center;
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__social-item {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .footer__link {
@@ -53,15 +83,14 @@
   letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &--white {
+    color: var(--primary-white-color);
+  }
 
-&--white {
-  color: var(--primary-white-color);
-}
-
-&:hover,
-&:focus {
-  color: var(--accept-color);
-}
+  &:hover,
+  &:focus {
+    color: var(--accept-color);
+  }
 }
 
 .footer__social-link {
@@ -75,9 +104,8 @@
   fill: var(--primary-white-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
-&:hover,
-&:focus {
-  background-color: var(--accept-color);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accept-color);
+  }
 }
