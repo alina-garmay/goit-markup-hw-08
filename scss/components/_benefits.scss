@@ -12,7 +12,13 @@
   }
 
   &__item {
-  
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 30px) / 2);
     }
@@ -50,5 +56,6 @@
   &__text {
     line-height: 1.71;
     letter-spacing: 0.03em;
+
   }
 }
